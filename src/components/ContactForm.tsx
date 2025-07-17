@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const KontaktForm = () => {
+const ContactForm = () => {
   return (
     <div className="flex w-full">
       <div className="basis-1/2 mx-auto h-[800px]">
@@ -40,4 +40,4 @@ const KontaktForm = () => {
   );
 };
 
-export default KontaktForm;
+export default ContactForm;
