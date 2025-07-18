@@ -15,7 +15,9 @@ const FeedbackAboutCGO: React.FC<Props> = ({ title, text, name }) => {
       <blockquote className="text-gray-700 italic mb-4 leading-relaxed">
         “{text}”
       </blockquote>
-      <p className="text-sm text-gray-500 text-right">– {name}</p>
+      <div>
+        <p className="text-sm text-gray-500 text-right">– {name}</p>
+      </div>
     </div>
   );
 };

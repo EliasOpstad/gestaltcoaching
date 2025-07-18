@@ -1,4 +1,15 @@
 import React from "react";
+import {
+  H1_SIZE,
+  H2_SIZE,
+  HEADING_FONT,
+  BODY_FONT,
+  FONT_WEIGHT_BOLD,
+  MEDIUM_PADDING,
+  SMALL_MARGIN,
+  MEDIUM_MARGIN,
+  TEXT_COLOR,
+} from "../styles/variables";
 
 type Props = {
   imageTitle?: string;
@@ -25,12 +36,29 @@ const TextAndImageComponent: React.FC<Props> = ({
     >
       <div className="basis-1/2">
         {imageTitle && (
-          <h3 className="text-2xl font-bold mb-2">{imageTitle}</h3>
+          <h1
+            style={{
+              fontSize: H1_SIZE,
+              fontFamily: HEADING_FONT,
+              fontWeight: FONT_WEIGHT_BOLD,
+              marginBottom: SMALL_MARGIN,
+              color: TEXT_COLOR,
+            }}
+          >
+            {imageTitle}
+          </h1>
         )}
         {typeof imageSrc === "string" ? (
           <img src={imageSrc} alt={altText} />
         ) : Array.isArray(imageSrc) ? (
-          <ul className="list-disc pl-6 space-y-2">
+          <ul
+            style={{
+              paddingLeft: MEDIUM_PADDING,
+              color: TEXT_COLOR,
+              fontFamily: BODY_FONT,
+            }}
+            className="list-disc space-y-2"
+          >
             {imageSrc.map((src, index) => (
               <li key={index}>{src}</li>
             ))}
@@ -39,16 +67,40 @@ const TextAndImageComponent: React.FC<Props> = ({
           imageSrc
         )}
       </div>
-      <div className="basis-1/2 p-4">
-        <h2 className="text-4xl font-bold mb-4">{title}</h2>
+      <div style={{ padding: MEDIUM_PADDING }} className="basis-1/2">
+        <h2
+          style={{
+            fontSize: H2_SIZE,
+            fontFamily: HEADING_FONT,
+            fontWeight: FONT_WEIGHT_BOLD,
+            marginBottom: MEDIUM_MARGIN,
+            color: TEXT_COLOR,
+          }}
+        >
+          {title}
+        </h2>
         {Array.isArray(text) ? (
-          <ul className="list-disc pl-6 space-y-2">
+          <ul
+            style={{
+              paddingLeft: MEDIUM_PADDING,
+              color: TEXT_COLOR,
+              fontFamily: BODY_FONT,
+            }}
+            className="list-disc space-y-2"
+          >
             {text.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         ) : (
-          <p>{text}</p>
+          <p
+            style={{
+              color: TEXT_COLOR,
+              fontFamily: BODY_FONT,
+            }}
+          >
+            {text}
+          </p>
         )}
       </div>
     </div>

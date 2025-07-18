@@ -10,7 +10,7 @@ const Om = () => {
         altText="Cathrine Gåre Opstad"
         title="Om Cathrine Gåre Opstad"
         text={
-          <div className="">
+          <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <FeedbackAboutCGO
                 text="Cathrine Gåre Opstad er en fantastisk gestaltcoach. Hun har en unik evne til å lytte og forstå, og hennes tilnærming har hjulpet meg med å finne klarhet i mine utfordringer. Jeg anbefaler henne på det sterkeste!"
