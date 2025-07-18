@@ -7,7 +7,7 @@ import KontaktForm from "@/components/ContactForm";
 import TextAndImageComponent from "@/components/TextAndImageComponent";
 import GoogleMap from "@/components/GoogleMap";
 
-const page = () => {
+const Home = () => {
   return (
     <>
       <Image
@@ -92,4 +92,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;
