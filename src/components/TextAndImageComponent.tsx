@@ -1,14 +1,16 @@
 import React from "react";
 
 type Props = {
-  imageSrc: string;
+  imageTitle?: string;
+  imageSrc: React.ReactNode;
   altText: string;
   title: string;
-  text: string;
+  text: React.ReactNode;
   reverseOrder?: boolean;
 };
 
 const TextAndImageComponent: React.FC<Props> = ({
+  imageTitle,
   imageSrc,
   altText,
   title,
@@ -16,13 +18,38 @@ const TextAndImageComponent: React.FC<Props> = ({
   reverseOrder = true,
 }) => {
   return (
-    <div className={`flex ${reverseOrder ? "flex-row-reverse" : "flex-row"}`}>
+    <div
+      className={`flex ${
+        reverseOrder ? "flex-row-reverse" : "flex-row"
+      } object-cover w-full`}
+    >
       <div className="basis-1/2">
-        <img src={imageSrc} alt={altText} />
+        {imageTitle && (
+          <h3 className="text-2xl font-bold mb-2">{imageTitle}</h3>
+        )}
+        {typeof imageSrc === "string" ? (
+          <img src={imageSrc} alt={altText} />
+        ) : Array.isArray(imageSrc) ? (
+          <ul className="list-disc pl-6 space-y-2">
+            {imageSrc.map((src, index) => (
+              <li key={index}>{src}</li>
+            ))}
+          </ul>
+        ) : (
+          imageSrc
+        )}
       </div>
       <div className="basis-1/2 p-4">
         <h2 className="text-4xl font-bold mb-4">{title}</h2>
-        <p>{text}</p>
+        {Array.isArray(text) ? (
+          <ul className="list-disc pl-6 space-y-2">
+            {text.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{text}</p>
+        )}
       </div>
     </div>
   );
