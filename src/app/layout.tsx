@@ -3,10 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.css";
 import React from "react";
 import Header from "../components/Header";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
