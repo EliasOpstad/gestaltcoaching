@@ -88,19 +88,20 @@ const TextAndImageComponent: React.FC<Props> = ({
             }}
             className="list-disc space-y-2"
           >
-            {text.map((item, index) => (
-              <li key={index}>{item}</li>
+            {React.Children.toArray(text).map((item, i) => (
+              <li key={i}>{item}</li>
             ))}
           </ul>
+        ) : typeof text === "string" || typeof text === "number" ? (
+          <p style={{ color: TEXT_COLOR, fontFamily: BODY_FONT }}>{text}</p>
         ) : (
-          <p
-            style={{
-              color: TEXT_COLOR,
-              fontFamily: BODY_FONT,
-            }}
+          // anything that's not a plain string/number gets a block wrapper
+          <div
+            className="prose max-w-none"
+            style={{ color: TEXT_COLOR, fontFamily: BODY_FONT }}
           >
             {text}
-          </p>
+          </div>
         )}
       </div>
     </div>
