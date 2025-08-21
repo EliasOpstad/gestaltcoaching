@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className=" text-2xl flex justify-between sticky items-center p-4 text-white top-0 left-0 right-0 z-50 h-[100px] border-b border-white">
+    <div className=" text-2xl flex justify-between sticky items-center p-4 top-0 left-0 right-0 z-50 h-[100px] bg-[#b7c2bc] border-b border-white">
       <h1>
         <Link href="/">Gestaltcoach Cathrine Gåre Opstad</Link>
       </h1>
