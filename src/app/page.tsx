@@ -75,7 +75,7 @@ const Home = () => {
         ]}
         reverseOrder={false}
       /> */}
-      <TextAndImageComponent
+      {/* <TextAndImageComponent
         imageSrc={<GoogleMap />}
         altText="Test Image"
         title="Beliggenhet"
@@ -87,7 +87,7 @@ const Home = () => {
           "Tel: 97259840",
         ]}
         reverseOrder={true}
-      />
+      /> */}
     </>
   );
 };
