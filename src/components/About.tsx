@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="w-full text-white py-20">
+    <section id="about" className="w-full text-black py-20">
       <div className="mx-auto max-w-6xl px-6 lg:grid lg:grid-cols-12 lg:gap-12 items-center">
         {/* Venstre: tekst */}
         <div className="lg:col-span-6 space-y-6">
@@ -11,7 +11,7 @@ export default function AboutSection() {
             Vår metode – din styrke
           </h2>
 
-          <p className="text-lg leading-relaxed text-white/90 max-w-xl">
+          <p className="text-lg leading-relaxed text-black/90 max-w-xl">
             <span className="block font-serif text-2xl mb-2"></span>
             Gestaltorientert coaching er relasjonell, opplevelsesbasert og
             prosessorientert. Vi utforsker sammen det som skjer her og nå.
@@ -20,7 +20,7 @@ export default function AboutSection() {
             egne valg – fordi <em>du sitter med svaret</em>.
           </p>
 
-          <div className="text-white/80 text-base">
+          <div className="text-black/80 text-base">
             «Du sitter med svaret» · «Vi gjør det sammen» · «Å se seg selv»
           </div>
 
