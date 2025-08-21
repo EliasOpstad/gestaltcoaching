@@ -6,7 +6,7 @@ const Om = () => {
   return (
     <>
       <TextAndImageComponent
-        imageSrc="/images/cgoBilde.jpg"
+        imageSrc="/images/cgoImage.jpg"
         altText="Cathrine Gåre Opstad"
         title="Om Cathrine Gåre Opstad"
         text={
