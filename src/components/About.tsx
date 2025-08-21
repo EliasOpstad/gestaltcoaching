@@ -23,12 +23,12 @@ export default function AboutSection() {
             «Du sitter med svaret» · «Vi gjør det sammen» · «Å se seg selv»
           </div>
 
-          <a
+          <Link
             href="/prosess"
             className="inline-block border border-white px-6 py-3 uppercase tracking-wider text-sm hover:bg-white hover:text-[#4a332c] transition"
           >
             Les om prosessen
-          </a>
+          </Link>
         </div>
 
         {/* Høyre: bilde (økt høyde + svart/hvitt) */}
