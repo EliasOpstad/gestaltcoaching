@@ -5,11 +5,13 @@ import TextAndImageComponent from "@/components/TextAndImageComponent";
 import GoogleMap from "@/components/GoogleMap";
 import ServicesAccordion from "@/components/ServicesAccordion";
 import AboutSection from "@/components/About";
+import Textbanner from "@/components/Textbanner";
 
 const Home = () => {
   return (
     <>
       <AboutSection />
+      <Textbanner />
       <ServicesAccordion />
       {/* <Image
         src="/images/homeBackground.jpg"
@@ -21,7 +23,7 @@ const Home = () => {
 
       <div className="absolute inset-0 flex items-center justify-center"></div>
 
-      <TextAndImageComponent
+      {/* <TextAndImageComponent
         imageSrc="/images/homeBackground.jpg"
         altText="Test Image"
         title="Temaer som kan omhandle jobb:"
@@ -36,9 +38,9 @@ const Home = () => {
           "Vi gjør det sammen.",
         ]}
         reverseOrder={false}
-      />
+      /> */}
 
-      <TextAndImageComponent
+      {/* <TextAndImageComponent
         imageSrc="/images/homeBackground.jpg"
         altText="Test Image"
         title="Temaer som kan omhandle deg som student"
@@ -50,9 +52,9 @@ const Home = () => {
           "Vi gjør det sammen.",
         ]}
         reverseOrder={true}
-      />
+      /> */}
 
-      <TextAndImageComponent
+      {/* <TextAndImageComponent
         imageTitle="Temaer som kan omhandle jobb:"
         imageSrc={[
           "Hvordan er det å være deg på jobb?",
@@ -72,7 +74,7 @@ const Home = () => {
           "Avbestilling må skje minst 24 timer på forhånd for å unngå fakturering.",
         ]}
         reverseOrder={false}
-      />
+      /> */}
       <TextAndImageComponent
         imageSrc={<GoogleMap />}
         altText="Test Image"
@@ -84,7 +86,7 @@ const Home = () => {
           "e-post: cathrine@gestaltcoach.no",
           "Tel: 97259840",
         ]}
-        reverseOrder={false}
+        reverseOrder={true}
       />
     </>
   );
