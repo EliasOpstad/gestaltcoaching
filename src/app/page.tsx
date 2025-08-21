@@ -1,13 +1,9 @@
 import React from "react";
 
 import "../styles/globals.css";
-import Image from "next/image";
-import Kontakt from "./kontakt/page";
-import KontaktForm from "@/components/ContactForm";
 import TextAndImageComponent from "@/components/TextAndImageComponent";
 import GoogleMap from "@/components/GoogleMap";
 import ServicesAccordion from "@/components/ServicesAccordion";
-import About from "@/components/About";
 import AboutSection from "@/components/About";
 
 const Home = () => {
