@@ -33,12 +33,12 @@ body {
 
 @layer base {
   body {
-    @apply font-sans;
+    @apply font-serif;
   } /* Open Sans */
   h1,
   h2,
   h3,
   .heading {
     @apply font-serif;
-  } /* Forum */
+  }
 }
