@@ -20,9 +20,7 @@ const Header = () => {
           <li>
             <Link href="/kontakt">Kontakt</Link>
           </li>
-          <li>
-            <Link href="/priser">Priser</Link>
-          </li>
+
           <li>
             <Link href="/om">Om Meg</Link>
           </li>
