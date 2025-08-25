@@ -1,6 +1,7 @@
 import FeedbackAboutCGO from "@/components/FeedbackAboutCGO";
 import TextAndImageComponent from "@/components/TextAndImageComponent";
 import React from "react";
+import "../../styles/globals.css";
 
 const Om = () => {
   return (

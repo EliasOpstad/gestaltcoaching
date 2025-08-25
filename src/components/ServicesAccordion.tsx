@@ -102,7 +102,7 @@ export default function ServicesAccordion() {
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
 
   return (
-    <section className=" text-white py-16">
+    <section className=" text-black py-16 bg-[#aab5af]">
       <div className="mx-auto max-w-6xl px-6 lg:grid lg:grid-cols-12 lg:gap-12">
         {/* Left heading */}
         <div className="lg:col-span-4 mb-10 lg:mb-0">
@@ -113,7 +113,7 @@ export default function ServicesAccordion() {
 
         {/* Right list */}
         <div className="lg:col-span-8 w-full">
-          <ul className="divide-y divide-white/40">
+          <ul className="divide-y divide-black/40">
             {items.map((item, idx) => {
               const isOpen = openIndex === idx;
               return (
@@ -134,11 +134,11 @@ export default function ServicesAccordion() {
                       aria-hidden="true"
                     >
                       {/* Horizontal bar */}
-                      <span className="absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 bg-white transition-opacity" />
+                      <span className="absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 bg-black transition-opacity" />
                       {/* Vertical bar (rotates to disappear) */}
                       <span
                         className={[
-                          "absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 bg-white transition-transform",
+                          "absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 bg-black transition-transform",
                           isOpen ? "scale-y-0" : "scale-y-100",
                         ].join(" ")}
                       />
@@ -146,7 +146,7 @@ export default function ServicesAccordion() {
                   </button>
 
                   {/* Divider line (full bleed look) */}
-                  <div className="h-[1px] bg-white/40" />
+                  <div className="h-[1px] bg-black/40" />
 
                   {/* Collapsible content */}
                   <div
@@ -159,7 +159,7 @@ export default function ServicesAccordion() {
                     ].join(" ")}
                   >
                     <div className="overflow-hidden">
-                      <div className="pt-5 pb-2 text-lg/7 text-white/90">
+                      <div className="pt-5 pb-2 text-lg/7 text-black/90">
                         {item.content}
                       </div>
                     </div>
