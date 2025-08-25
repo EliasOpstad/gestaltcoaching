@@ -34,12 +34,10 @@ export default function AboutSection() {
           </Link>
         </div>
 
-        {/* Høyre: bilde (økt høyde + svart/hvitt) */}
         <div className="lg:col-span-6 mt-12 lg:mt-0">
-          {/* Ønsker du enda mer høyde, øk h-[680px] til h-[760px] */}
           <div className="relative w-full h-[640px] md:h-[680px]">
             <Image
-              src="/images/cgoImage.jpg" // legg bildet i /public og endre filnavn ved behov
+              src="/images/cgoImage.jpg"
               alt="Keramiske former i studio"
               fill
               priority

@@ -1,11 +1,11 @@
 import React from "react";
 
 import "../styles/globals.css";
-import TextAndImageComponent from "@/components/TextAndImageComponent";
-import GoogleMap from "@/components/GoogleMap";
 import ServicesAccordion from "@/components/ServicesAccordion";
 import AboutSection from "@/components/About";
 import Textbanner from "@/components/Textbanner";
+
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -88,6 +88,43 @@ const Home = () => {
         ]}
         reverseOrder={true}
       /> */}
+      <div className="flex w-full md:flex-row flex-col-reverse">
+        <div className="basis-1/2 mx-auto h-[550px]">
+          <Image
+            src="/images/test.jpg"
+            alt="Home Background"
+            height={500}
+            width={500}
+            className="inset-0 object-cover w-full h-full"
+          />
+        </div>
+        <div className="basis-1/2 mx-auto mt-10 h-[500px] ml-10 mr-10">
+          <h1 className="text-2xl font-bold mb-4">Kontakt oss</h1>
+          <form>
+            <input
+              type="text"
+              placeholder="Navn"
+              className="border p-2 mb-4 w-full font-serif"
+            />
+            <input
+              type="email"
+              placeholder="E-post"
+              className="border p-2 mb-4 w-full font-serif"
+            />
+            <textarea
+              placeholder="Melding"
+              className="border p-2 mb-4 w-full font-serif"
+              rows={4}
+            />
+            <button
+              type="submit"
+              className="bg-blue-500 text-white p-2 font-serif border border-blue-500 rounded mb-10"
+            >
+              Send melding
+            </button>
+          </form>
+        </div>
+      </div>
     </>
   );
 };

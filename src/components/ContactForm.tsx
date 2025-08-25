@@ -34,6 +34,10 @@ const ContactForm = () => {
           <button type="submit" className="bg-blue-500 text-white p-2">
             Send melding
           </button>
+          <p>
+            Hei mamma, ønsker du at kontaktskjemaet skal være på egen side, på
+            "hjem siden" eller begge deler?"
+          </p>
         </form>
       </div>
     </div>
