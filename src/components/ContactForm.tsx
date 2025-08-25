@@ -36,7 +36,7 @@ const ContactForm = () => {
           </button>
           <p>
             Hei mamma, ønsker du at kontaktskjemaet skal være på egen side, på
-            "hjem siden" eller begge deler?"
+            hjem siden eller begge deler?
           </p>
         </form>
       </div>
