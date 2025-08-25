@@ -32,7 +32,7 @@ const Om = () => {
                 />
               </div>
               <div className="mt-6">
-                I min erfaringsbank har jeg en rekke utdannelser, være seg;
+                (C) I min erfaringsbank har jeg en rekke utdannelser, være seg;
                 håndverker, leder, tegnspråktolk og gestaltcoach. I min
                 yrkeskarriere har jeg vært både freelancer, fast ansatt og
                 grunder. Jeg har også kjent på kroppen det å ha møtt veggen to
